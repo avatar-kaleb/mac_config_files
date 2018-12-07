@@ -1,0 +1,12 @@
+#git functions
+gc() { git add .; git commit -m "$1"; }
+
+gcp() { git add .; git commit -m “$1”; git push; }
+
+gcb() { git checkout $1 }
+
+gcnb() { git checkout -b $1 }
+
+gcbp() { git checkout -b $1; git push origin $1;}
+
+gpo() { git push origin $1}

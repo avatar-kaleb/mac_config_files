@@ -1,0 +1,14 @@
+alias zsh="source ~/.zshrc"
+
+# npm
+alias ni="npm i"
+alias nrd="npm run dev"
+alias nrm="npm run mock"
+alias nrs="npm run start"
+alias nrl="npm run lint"
+alias nrlf="npm run lint:fix"
+
+# git
+alias gcd="git checkout development; git pull origin development"
+alias gs="git status"
+
