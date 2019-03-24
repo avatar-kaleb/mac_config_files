@@ -1,4 +1,4 @@
-alias zsh="source ~/.zshrc"
+#alias zsh="source ~/.zshrc"
 
 # npm
 alias ni="npm i"
@@ -7,8 +7,15 @@ alias nrm="npm run mock"
 alias nrs="npm run start"
 alias nrl="npm run lint"
 alias nrlf="npm run lint:fix"
+alias nrt="npm run test"
 
 # git
+alias gpod="git pull origin development"
 alias gcd="git checkout development; git pull origin development"
 alias gs="git status"
+alias git-clean-branches="git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d"
+alias git-clean-branches-force="git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
+alias git-count-lines="git ls-files | xargs wc -l"
 
+#coverage
+alias cov="open ../nmlv-px-plan-edit/coverage/lcov-report/index.html"

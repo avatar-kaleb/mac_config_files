@@ -31,3 +31,6 @@ echo '
 
 source ~/.aliases
 source ~/.functions
+
+#z
+. /usr/local/etc/profile.d/z.sh
